@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        .formstyle{
+            width: 400px;
+            height: 500px;
+        }
+        .btn-primary{
+            width: 70px;
+            height: 50px;
+        }
+        .form-control{
+            height: 80px;
+        }
+        .formstyle{
+            background-color: darkslategray;
+        }.btn-danger{
+            height: 50px;
+        }
+        #first{
+            height: 600px;
+            background-image: url('./public/OIP\ \(1\).jpg');
+            background-size: cover;
+        }
+
+       
+    </style>
+</head>
+<body class="contaoner-fluid">
+    <div class="row">
+        <div class="col-lg-12 bg-dark">
+            <marquee><h1 class="text-success"><i>JAVASCRIPT CALCULATOR</i></h1></marquee>
+        </div>
+    </div>
+    <div class="row"id="first" >
+        <div class="col-lg-11 d-flex " >
+            <div class="formstyle border border-2 p-2 mt-4 ms-4">
+                <form name="form1">
+                    <div>
+                        <input class="form-control " type="text" name="answer">
+                    </div>
+                    <div class="d-flex mt-4 justify-content-between">
+                        <div>
+                            <input type="button" value="1" class="btn btn-primary" onclick="form1.answer.value += '1'">
+                        </div>
+                        <div>
+                            <input type="button" value="2" class="btn btn-primary" onclick="form1.answer.value += '2'">
+                        </div>
+                        <div>
+                            <input type="button" value="3" class="btn btn-primary" onclick="form1.answer.value += '3'">
+                        </div>
+                        <div>
+                            <input type="button" value="+" class="btn btn-primary" onclick="form1.answer.value += '+'">
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 justify-content-between">
+                        <div>
+                            <input type="button" value="4" class="btn btn-primary" onclick="form1.answer.value += '4'">
+                        </div>
+                        <div>
+                            <input type="button" value="5" class="btn btn-primary" onclick="form1.answer.value += '5'">
+                        </div>
+                        <div>
+                            <input type="button" value="6" class="btn btn-primary" onclick="form1.answer.value += '6'">
+                        </div>
+                        <div>
+                            <input type="button" value="-" class="btn btn-primary" onclick="form1.answer.value += '-'">
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 justify-content-between">
+                        <div>
+                            <input type="button" value="7" class="btn btn-primary" onclick="form1.answer.value += '7'">
+                        </div>
+                        <div>
+                            <input type="button" value="8" class="btn btn-primary" onclick="form1.answer.value += '8'">
+                        </div>
+                        <div>
+                            <input type="button" value="9" class="btn btn-primary" onclick="form1.answer.value += '9'">
+                        </div>
+                        <div>
+                            <input type="button" value="*" class="btn btn-primary" onclick="form1.answer.value += '*'">
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 justify-content-between">
+                        <div>
+                            <input type="button" value="0" class="btn btn-primary" onclick="form1.answer.value += '0'">
+                        </div>
+                        <div>
+                            <input type="button" value="." class="btn btn-primary" onclick="form1.answer.value += '.'">
+                        </div>
+                        <div>
+                            <input type="button" value="/" class="btn btn-primary" onclick="form1.answer.value += '/'">
+                        </div>
+                        <div>
+                            <input type="button" value="=" class="btn btn-primary" onclick="form1.answer.value = eval(form1.answer.value)" >
+                        </div>
+                    </div>
+                    <div class="mt-4 ms-4">
+                        <input type="button" class="btn btn-danger w-75 ms-4" value="clear all" onclick="form1.answer.value =''">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
